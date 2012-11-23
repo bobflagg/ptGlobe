@@ -1,5 +1,4 @@
-// Initial code modified from Mike Bostock's example at: http://mbostock.github.com/d3/talk/20111018/azimuthal.html
-// Code for mouse movements in particular is nearly identical
+// Based on Mike Bostock's example at: http://mbostock.github.com/d3/talk/20111018/azimuthal.html
 function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cityTextId, 
   cityLinkId, sampleCityId, loadTimeId, keyTextId, arcWidth, startColor, 
   endColor, highlightColor) {

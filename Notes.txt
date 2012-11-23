@@ -1,4 +1,8 @@
 # -----------------------------------------------------------------------------
+Visual Information-Seeking Mantra:
+    Overview first, zoom and filter, then details-on-demand.
+    - Shneiderman 1996
+# -----------------------------------------------------------------------------
 # git tag -a v0.1 -m "First working version."
 # git push --tags
 # -----------------------------------------------------------------------------
