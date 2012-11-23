@@ -203,9 +203,11 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
                           .attr("r", pointSize(d.properties.mag))
                           .attr("opacity", cityOpacity(d.properties.mag))
                           .attr("fill", cityColors(d.properties.mag));
-
-                        displayDetail(d.geometry.coordinates[1], d.geometry.coordinates[0], 'stations.json');      
-
+                        displayDetail(d.geometry.coordinates[1], d.geometry.coordinates[0], 'data/'+
+                            d.properties.city.toString()+"-"+
+                            d.properties.region.toString()+"-"+
+                            d.properties.country.toString()+
+                            '.json');      
                     })
                     .attr("class", "city")
                     .attr("stroke", "#aaa")

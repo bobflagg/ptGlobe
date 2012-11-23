@@ -61,6 +61,23 @@ a {
   border-color:#a9b4c0;
 }
 
+.stations, .stations svg {
+  position: absolute;
+}
+
+.stations svg {
+  width: 60px;
+  height: 20px;
+  padding-right: 100px;
+  font: 10px sans-serif;
+}
+
+.stations circle {
+  fill: brown;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
 #description {
   margin-left: 0px;
   padding-top: 25px;
