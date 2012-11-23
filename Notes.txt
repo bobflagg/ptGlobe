@@ -1,9 +1,11 @@
 # -----------------------------------------------------------------------------
-Visual Information-Seeking Mantra:
-    Overview first, zoom and filter, then details-on-demand.
-    - Shneiderman 1996
+http://evening-escarpment-8134.herokuapp.com/static/globe/index.html
 # -----------------------------------------------------------------------------
-# git tag -a v0.1 -m "First working version."
-# git push --tags
+# Visual Information-Seeking Mantra:
+#     Overview first, zoom and filter, then details-on-demand.
+#     - Shneiderman 1996
+# -----------------------------------------------------------------------------
+git tag -a v0.1 -m "First working version."
+git push --tags
 # -----------------------------------------------------------------------------
 

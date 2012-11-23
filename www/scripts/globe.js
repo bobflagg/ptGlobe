@@ -2,43 +2,26 @@
 function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cityTextId, 
   cityLinkId, sampleCityId, loadTimeId, keyTextId, arcWidth, startColor, 
   endColor, highlightColor) {
-
-    var keyTextArray;
-    var debug = true;
-    var feature;
-    var points;
-    var stopRotating = false;
-    var loaded = false;
-    var pointScale = d3.scale.linear();
-    var countScale = d3.scale.linear();
+    var keyTextArray, debug = true, feature, points, stopRotating = false, loaded = false;
+    var pointScale = d3.scale.linear(), countScale = d3.scale.linear();
     // Define origin and get ready to roll
-    var origin = [-71.03, 25.37],
-        velocity = [0.0040, 0.0000];
-
+    var origin = [-71.03, 25.37], velocity = [0.0040, 0.0000];
     var projection = d3.geo.azimuthal()
         .scale(windowDim/2) // scale factor, defaults to 200
         .origin(origin)
         .mode("orthographic")
         .translate([(windowDim/2 + paddingDim/2), (windowDim/2 + paddingDim/2)]); // 25 pixel margin
-
     // generates a circle for clipping features before converting to paths
-    var circle = d3.geo.circle()
-            .origin(projection.origin());
-
+    var circle = d3.geo.circle().origin(projection.origin());
     // Generates path function() for creating svg paths
-    var path = d3.geo.path()
-        .projection(projection);
-
+    var path = d3.geo.path().projection(projection);
     // Define movement functions in advance of drawing SVG
-    var m0,
-        o0;
-
+    var m0, o0;
     function mousedown() {
       m0 = [d3.event.pageX, d3.event.pageY];
       o0 = projection.origin();
       d3.event.preventDefault();
     }
-
     function mousemove() {
       if (m0) {
         stopRotating = true;
@@ -50,14 +33,12 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
         refresh();
       }
     }
-
     function mouseup() {
       if (m0) {
         mousemove();
         m0 = null;
       }
     }
-
     function refresh(duration) {
         function updateCity(d) {
             var coords = [];
@@ -73,7 +54,6 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
             }
             return coords;
         }
-
         if (duration) {
             feature.transition().duration(duration).attr("d", clip);
             points.transition().duration(duration).attr({
@@ -110,27 +90,17 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
             });
         }
     }
-
     // Clips the feature according to the great circle, then converts it to a both
     function clip(d) {
       return path(circle.clip(d));
     }
-
     // First draw the key
-    var key = d3.select(keyId).append("svg:svg")
-        .attr("width", 400)
-        .attr("height", 75);
-
+    var key = d3.select(keyId).append("svg:svg").attr("width", 400).attr("height", 75);
     var keyData = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-    var colorScale = d3.scale.linear()
-        .domain([0, 10])
-        .range([startColor, endColor]);
-
+    var colorScale = d3.scale.linear().domain([0, 10]).range([startColor, endColor]);
     function cityColors(d) {
         return d3.rgb(colorScale(pointScale(d))).darker(0.0).toString();
     }
-
     function pointSize(count) {
         // Note this doesn't take into account the exponential difference
         // between a 4.0 and 5.0, which has 10X greater shaking amplitude
@@ -138,13 +108,10 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
         d = pointScale(count)
         return (8.0 * Math.sqrt(d / Math.PI));
     }
-
     function cityOpacity(d) {
         return (1 - (1 - pointScale(d) * 0.1) / 2);
     }
-
     var keyText = d3.select(keyTextId);
-
     key.selectAll("key")
         .data(keyData)
         .enter()
@@ -160,12 +127,9 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
         .attr("r", pointSize)
         .on("mouseover", function() {
             element = d3.select(this);
-            element
-                .attr("stroke", highlightColor)
-                .attr("stroke-width", 2);
+            element.attr("stroke", highlightColor).attr("stroke-width", 2);
             textIndex = element.data()[0];
-            keyText
-                .text(keyTextArray[textIndex]);
+            keyText.text(keyTextArray[textIndex]);
         })
         .on("mouseout", function() {
             element = d3.select(this);
@@ -174,41 +138,30 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
             keyText
                 .text(keyTextArray[0]);
         });
-
-
     // Now get the city text
     var cityText = d3.select(cityTextId);
     var cityLink = d3.select(cityLinkId);
     var sampleCity = d3.select(sampleCityId);
     var loadTime = d3.select(loadTimeId);
-
     // Now draw the globe
     var svg = d3.select(id).append("svg:svg")
         .attr("width", (windowDim + paddingDim))
         .attr("height", (windowDim + paddingDim))
         .on("mousedown", mousedown);
-
     // Now add a border circle
-    svg.selectAll("circle")
-        .data([0])
-        .enter()
-        .append('circle')
+    svg.selectAll("circle").data([0]).enter().append('circle')
         .attr("class", "globe-outline")
         .attr("fill-opacity", 0.0) // Override these with css for globe-outline
         .attr("stroke", "#000000") // Override these with css for globe-outline
         .attr("r", (windowDim+4)/2) // Add a 2 pixel buffer
         .attr("cx", ((windowDim+paddingDim)/2))
         .attr("cy", ((windowDim+paddingDim)/2));
-
     // Load the GEOJSON data for the countries
     d3.json(countriesJSON, function(collection) {
-      feature = svg.selectAll("path")
-        .data(collection.features)
-        .enter()
+      feature = svg.selectAll("path").data(collection.features).enter()
         .append("svg:path")
         .attr("class", "country")
         .attr("d", clip);
-
       function processCities(cities) {
               if (debug) {console.log("Processing cities...");}
               var maxCount = d3.max(cities.features, function(d) { return d.properties.mag;})
@@ -228,18 +181,13 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
                     "Between "+Math.round(countScale(8.0))+" and "+Math.round(countScale(8.9))+" projects",
                     "More than "+Math.round(countScale(9.0))+" projects"
                 ];
-              points = svg.selectAll("points")
-                    .data(cities.features)
-                    //.data(createPoints(10))                    
-                    .enter()
+              points = svg.selectAll("points").data(cities.features).enter()
                     .append("svg:circle")
                     .on("mouseover", function(d) {
                         // First unhighlight the rest of the points
                         points.attr("class", "city");
-
                         element = d3.select(this);
                         element.attr("class", "city-selected");
-
                         cityText
                           .attr("href", d.properties.url)
                           .attr("class", "true-city-text")
@@ -249,14 +197,14 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
                         cityLink
                           .attr('href', d.properties.url)
                           .text("  (Link)  ");
-
                         var demoCity = citiesSVG.selectAll("circle");
-
                         demoCity
                           .attr("stroke", highlightColor)
                           .attr("r", pointSize(d.properties.mag))
                           .attr("opacity", cityOpacity(d.properties.mag))
                           .attr("fill", cityColors(d.properties.mag));
+
+                        displayDetail(d.geometry.coordinates[1], d.geometry.coordinates[0], 'stations.json');      
 
                     })
                     .attr("class", "city")
@@ -277,36 +225,22 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
              loaded = true;
              refresh();
           }
-
       d3.json("data/cities.json", processCities);
-
       // Add the blank city outline
-      var citiesSVG = sampleCity.append("svg")
-        .attr("width", 50)
-        .attr("height", 50);
-
-      citiesSVG
-        .selectAll("sample-city")
-        .data([0])
-        .enter()
-        .append("circle")
+      var citiesSVG = sampleCity.append("svg").attr("width", 50).attr("height", 50);
+      citiesSVG.selectAll("sample-city").data([0]).enter().append("circle")
         .attr("r", 10)
         .attr("cx", 25)
         .attr("cy", 25)
         .attr("fill", "#C9C9C9")
         .attr("class", "sample-city");
-
       // Finally update the data load time
       var currentDate = new Date();
       var format = d3.time.format("%A %B %e, %Y at %H:%M local time."); //  at %H:%M:%S
       loadTime.text(format(currentDate));
-
       // And spin the globe
       spin();
     });
-
-    // Timer before selection changes focus
-    // Now rotate the globe
     function spin() {
         t0 = Date.now();
         origin = projection.origin();
@@ -322,56 +256,21 @@ function drawGlobe(id, windowDim, paddingDim, countriesJSON,resumeId, keyId, cit
             return stopRotating;
         });
     }
-
     // Add the "resume" rotation text
     var resume = d3.select(resumeId);
-
-    resume
-        .attr("class", "resume-playing")
-        .on("click", function() {
-            if (stopRotating) {
-                stopRotating = false;
-                resume.attr("class", "resume-playing");
-                spin();
-            } else {
-                resume.attr("class", "resume-stopped");
-                stopRotating = true;
-            }
-        });
-
-    // Now finally draw the right bounding arc
-    /*
-    if (arcWidth !== 0) {
-        var outerR = 325;
-        var innerR;
-        if (arcWidth < 0) {
-            innerR = 0;
+    resume.attr("class", "resume-playing").on("click", function() {
+        if (stopRotating) {
+            stopRotating = false;
+            resume.attr("class", "resume-playing");
+            spin();
         } else {
-            innerR = outerR - arcWidth;
+            resume.attr("class", "resume-stopped");
+            stopRotating = true;
         }
-        var arc = d3.svg.arc()
-            .startAngle(function(d) {return (Math.PI * 0.15);})
-            .endAngle(function(d) {return (Math.PI * 0.85);})
-            .innerRadius(function(d) {return innerR;})
-            .outerRadius(function(d) {return outerR;});
-
-        svg.selectAll("bounding-arc")
-            .data([1])
-            .enter()
-            .insert("svg:path", "circle")
-            .attr("transform", ("translate(" + 325 + ", " + 325 + ")"))
-            .attr("class", "bounding-arc")
-            .attr("d", arc);
-    }
-    */
-
+    });
     // Then allow the window to get moved around
-    d3.select(window)
-        .on("mousemove", mousemove)
-        .on("mouseup", mouseup);
-
+    d3.select(window).on("mousemove", mousemove).on("mouseup", mouseup);
 }
-
 // Function for parsing the JSONP (don't call it immediately)
 function doNothing(data) {
     return data;
