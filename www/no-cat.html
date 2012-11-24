@@ -1,48 +1,47 @@
 <html>
 <head>
-    <title>The sun never sets on Truonex</title>
+    <title>The Sun Never Sets on Truonex!</title>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="scripts/d3.v2.min.js"></script>
     <script type="text/javascript" src="scripts/markerwithlabel.js"></script>   
     <script src="http://use.edgefonts.net/lato.js"></script>
-    <link rel="stylesheet" href="css/category.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
 </head>
 
 <body>
 <div id="main-window">
-	 <div id="category">
-        <div id="titling"><h1>Project Locator</h1></div>
-        <div id="main-text">
-            <p id="data-text">
-            	<i>Click on a category to show corresponding sites and projects.</i>
-            </p>
-        </div>
-    </div>
     <div id="globe"></div>
     <div id="resume"></div>
-    <div id="map">..............</div>
+    <div id="description">
+        <div id="titling"><h1>Project Locator</h1></div>
+        <div id="map"></div>
+        <div id="main-text">
+            <p id="data-text">
+                Data as of <span id="load-time">(Loading data...).</span>
+            </p>
+            <div id="rollover">
+                <div id="sample-city"></div>
+                <a id="current-city" href="Javascript: void(0);" target="_blank">
+                    <p class="sample-city-text">Highlight a city on the left for additional information 
+                        about projects at that location.</p>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer>
-    <p><b>With Categories</b> | <a href="index.html">Without Categories</a></p>
+    <p><a href="index.html">With Categories</a> | <b>Without Categories</b></p>
 </footer>
-<script type="text/javascript" src="scripts/category.js"></script>
+
 <script type="text/javascript" src="scripts/globe.js"></script>
 <script type="text/javascript" src="scripts/detail.js"></script>
-<!--<script type="text/javascript">
-	var globeplaceholder = d3.select("#globe").append("svg:svg")
-    	.attr("width", 650)
-    	.attr("height", 650)
-  		.append("svg:g");
-</script>-->
 <script type="text/javascript">
-   // var windowDim = 600;
-   // var paddingDim = 50;
-    var windowDim = 400;
-    var paddingDim = 40;
     // from Mike Bostock's 10-18-11 talk: https://github.com/mbostock/d3/blob/gh-pages/talk/20111018/world-countries.json
     var countriesJSON = "data/worldcountries.geo.json";
+    var windowDim = 600;
+    var paddingDim = 50;
     var id = "#globe";
     var resumeId = "#resume";
     var keyId = "#key-place";
