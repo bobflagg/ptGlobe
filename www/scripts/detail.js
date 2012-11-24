@@ -21,11 +21,26 @@ function displayDetail(latitude, longitude, dataPath) {
           			.each(transform)
           			.attr("class", "marker");
 				// Add a circle.
-				marker.append("svg:circle").attr("r", 4.5).attr("cx", padding).attr("cy", padding);
+				//marker.append("svg:circle").attr("r", 4.5).attr("cx", padding).attr("cy", padding);
       			// Add a label.
       			//marker.append("svg:text").attr("x", padding + 7).attr("y", padding).attr("dy", ".31em")
           		//	.text(function(d) { return d.key; });
 	      		function transform(d) {
+	      			var homeLatLng = new google.maps.LatLng(d.value[1], d.value[0]);
+					var marker = new MarkerWithLabel({
+						position: homeLatLng,
+						draggable: true,
+						map: map,
+						labelContent: "",
+						labelAnchor: new google.maps.Point(22, 0),
+						labelClass: "labels" // the CSS class for the label
+					});
+					var iw = new google.maps.InfoWindow({
+						content: d.value[2].toString()
+					});
+					google.maps.event.addListener(marker, "click", function (e) { iw.open(map, marker); });
+
+
 	        		d = new google.maps.LatLng(d.value[1], d.value[0]);
 	        		d = projection.fromLatLngToDivPixel(d);
 	        		return d3.select(this)

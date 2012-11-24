@@ -1,0 +1,65 @@
+{
+ "name": "All projects",
+ "children": [
+ 	{
+ 	"name": "Design",
+ 	"children": [
+ 				{
+ 				"name": "Graphic Design",
+ 				"children": [
+ 							{"name": "Book Layout", "size": 1041},
+ 							{"name": "Typography", "size": 1041},
+ 							{"name": "Web Design", "size": 1041}
+ 							]
+ 				},
+  				{"name": "Illustration", "size": 1041},
+  				{"name": "Information graphics", "size": 1041},
+  				{"name": "Interfaces", "size": 1041}
+ 				]
+ 	},
+ 	{
+ 	"name": "Art",
+ 	"children": [
+ 				{"name": "Crafts", "size": 1041},
+  				{
+ 				"name": "Drawing",
+ 				"children": [
+ 							{"name": "Pen & Ink", "size": 1041},
+ 							{"name": "Dry Media", "size": 1041}
+ 							]
+ 				},
+  				{"name": "Installation", "size": 1041},
+  				{"name": "Multi-media", "size": 1041},
+  				{"name": "Painting", "size": 1041},
+  				{"name": "Sculpture", "size": 1041}
+ 				]
+ 	},
+ 	{
+ 	"name": "Health",
+ 	"children": [
+ 				{"name": "Nutrition & Fitness", "size": 1041},
+  				{"name": "Medical Imaging", "size": 1041},
+  				{"name": "Personal Data Tracking", "size": 1041},
+  				{"name": "Therapeutic Machines", "size": 1041}
+ 				]
+ 	}, 	
+ 	{
+ 	"name": "Engineering",
+ 	"children": [
+  				{"name": "Hardware", "size": 1041},
+  				{"name": "Software", "size": 1041},
+  				{"name": "Sensors", "size": 1041},
+  				{"name": "Circuitry", "size": 1041}
+ 				]
+ 	},
+ 	{
+ 	"name": "Science",
+ 	"children": [
+ 				{"name": "Energy & Sustainability", "size": 1041},
+  				{"name": "Chemistry", "size": 1041},
+  				{"name": "Astronomy", "size": 1041},
+  				{"name": "Genetics", "size": 1041}
+ 				]
+ 	}
+    ]
+}
