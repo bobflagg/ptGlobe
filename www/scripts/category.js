@@ -1,6 +1,6 @@
 var m = [0, 120, 0, 70],
     w = 500 - m[1] - m[3],
-    h = 480 - m[0] - m[2],
+    h = 500 - m[0] - m[2],
     i = 0,
     root;
 
@@ -33,8 +33,6 @@ d3.json("data/categories.json", function(json) {
   root.children.forEach(toggleAll);
   toggle(root.children[0]);
   toggle(root.children[1]);
-  toggle(root.children[2]);
-  toggle(root.children[3]);
   toggle(root.children[4]);
   toggle(root.children[0].children[0]);
     toggle(root.children[1].children[1]);
@@ -62,11 +60,11 @@ function update(source) {
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-      .on("click", function(d) { toggle(d); update(d);});
+      .on("click", function(d) { toggle(d); update(d); });
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
-      .style("fill", function(d) { return d.selected ? "red" : "#fff"; });
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("svg:text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
@@ -84,7 +82,12 @@ function update(source) {
 
   nodeUpdate.select("circle")
       .attr("r", 5)
-      .style("fill", function(d) { return d.selected ? "red" : "#fff"; });
+      .style("fill", function(d) { 
+        if (d.state == 1) return "lightsteelblue";
+        if (d.state == 2) return "#fff";
+        d.state = 3;
+        return "red"; 
+      });
 
   nodeUpdate.select("text")
       .style("fill-opacity", 1);
@@ -139,13 +142,14 @@ function update(source) {
 
 // Toggle children.
 function toggle(d) {
-  if (d.selected) {
-    d.selected = false;
-    //d._children = d.children;
-    //d.children = null;
+  if (d.state == 1) d.state = 2;
+  if (d.state == 2) d.state = 3;
+  if (d.state == 3) d.state = 1;
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
   } else {
-    d.selected = true;
-    //d.children = d._children;
-    //d._children = null;
+    d.children = d._children;
+    d._children = null;
   }
 }
