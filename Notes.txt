@@ -11,3 +11,16 @@ git tag -a v0.2 -m "Added category tree and detail map."
 git push --tags
 # -----------------------------------------------------------------------------
 
+Next Steps:
+	1. connect Google Map API with D3
+	2. connect category treet with Globe
+[15:39:12] Li Bian: note on #1: zoom in / out on the globe itself, show # of project on hover
+[15:39:34] Li Bian: note on #2, use click and clicking again to select and deselect categories of projects on the globe
+[15:39:54] Li Bian: 3, add a "Display All Project" button / label on the top of the page
+[15:40:34] Li Bian: note on #3, this button is for refreshing the page and letting users get back to the default mode where they can see all projects displayed instead of just their selected categories
+[15:42:04] Li Bian: 4. look into projects from Danmark
+[15:42:10] Li Bian: should be about 200~300 of them
+[15:42:23] Li Bian: 5. and I will give you more project data from MIT Media Lab
+[16:15:07] Call from Li Bian, duration 01:21:18.
+
+

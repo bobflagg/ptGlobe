@@ -13,7 +13,7 @@ var diagonal = d3.svg.diagonal()
 var vis = d3.select("#category").append("svg:svg")
     .attr("width", w + m[1] + m[3])
     .attr("height", h + m[0] + m[2])
-  .append("svg:g")
+    .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 
@@ -21,26 +21,40 @@ d3.json("data/categories.json", function(json) {
   root = json;
   root.x0 = h / 2;
   root.y0 = 0;
+  resetSelections();
+  d3.select("#xxx")      
+    .style("cursor", "pointer")
+    .on("click", function() {resetSelections();});
+});
 
+function resetState(d) {
+  d.state = false
+  if (d.children) {
+    d.children.forEach(resetState);
+  }
+  if (d._children) {
+    d._children.forEach(resetState);
+  }
+}
+
+function resetSelections() {
   function toggleAll(d) {
     if (d.children) {
       d.children.forEach(toggleAll);
       toggle(d);
     }
   }
-
   // Initialize the display to show a few nodes.
   root.children.forEach(toggleAll);
   toggle(root.children[0]);
   toggle(root.children[1]);
   toggle(root.children[4]);
   toggle(root.children[0].children[0]);
-    toggle(root.children[1].children[1]);
- // toggle(root.children[9]);
- // toggle(root.children[9].children[0]);
-
+  toggle(root.children[1].children[1]);
+  resetState(root);
+  root.state = true;
   update(root);
-});
+}
 
 function update(source) {
   var duration = d3.event && d3.event.altKey ? 5000 : 500;
@@ -61,19 +75,25 @@ function update(source) {
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
       .on("click", function(d) { toggle(d); update(d); });
-
   nodeEnter.append("svg:circle")
-      .attr("r", 1e-6)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+    .attr("r", 1e-6)
+    .style("fill", function(d) { return d.state ? "red" : "lightsteelblue"; });
 
   nodeEnter.append("svg:text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
-      .attr("fill", "grey")
+      .attr("fill", function(d) { return d.state ? "red" : "grey"; })
       .attr("font-family", "FuturaStd-Medium")
-      .style("fill-opacity", 1e-6);
+      .style("fill-opacity", 1e-6)
+      .style("cursor", "pointer")
+      .on("click", function(d) { 
+        d3.event.stopPropagation();
+        toggleState(d);
+        update(d);
+        d3.event.preventDefault();
+      });
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -82,15 +102,12 @@ function update(source) {
 
   nodeUpdate.select("circle")
       .attr("r", 5)
-      .style("fill", function(d) { 
-        if (d.state == 1) return "lightsteelblue";
-        if (d.state == 2) return "#fff";
-        d.state = 3;
-        return "red"; 
-      });
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+      //.style("stroke", function(d) { return d.state ? "red" : "lightsteelblue"; });
 
   nodeUpdate.select("text")
-      .style("fill-opacity", 1);
+      .style("fill-opacity", 1)
+      .attr("fill", function(d) { return d.state ? "red" : "grey"; })
 
   // Transition exiting nodes to the parent's new position.
   var nodeExit = node.exit().transition()
@@ -142,14 +159,19 @@ function update(source) {
 
 // Toggle children.
 function toggle(d) {
-  if (d.state == 1) d.state = 2;
-  if (d.state == 2) d.state = 3;
-  if (d.state == 3) d.state = 1;
   if (d.children) {
     d._children = d.children;
     d.children = null;
   } else {
     d.children = d._children;
     d._children = null;
+  }
+}
+
+function toggleState(d) {
+  if (d.state) {
+    d.state = false;
+  } else {
+    d.state = true;
   }
 }
