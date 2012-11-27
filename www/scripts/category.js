@@ -22,7 +22,7 @@ d3.json("data/categories.json", function(json) {
   root.x0 = h / 2;
   root.y0 = 0;
   resetSelections();
-  d3.select("#xxx")      
+  d3.select("#dap")      
     .style("cursor", "pointer")
     .on("click", function() {resetSelections();});
 });
