@@ -1,3 +1,31 @@
+var topics = [];
+var topicHash = new Hash();
+topicHash["Book Layout"] = 1;
+topicHash["Typography"] = 2;
+topicHash["Web Design"] = 3;
+topicHash["Illustration"] = 4;
+topicHash["Information graphics"] = 5;
+topicHash["Interfaces"] = 6;
+topicHash["Crafts"] = 7;
+topicHash["Pen & Ink"] = 8;
+topicHash["Dry Media"] = 9;
+topicHash["Installation"] = 10;
+topicHash["Multi-media"] = 11;
+topicHash["Painting"] = 12;
+topicHash["Sculpture"] = 13;
+topicHash["Nutrition & Fitness"] = 14;
+topicHash["Medical Imaging"] = 15;
+topicHash["Personal Data Tracking"] = 16;
+topicHash["Therapeutic Machines"] = 17;
+topicHash["Hardware"] = 18;
+topicHash["Software"] = 19;
+topicHash["Sensors"] = 20;
+topicHash["Circuitry"] = 21;
+topicHash["Energy & Sustainability"] = 22;
+topicHash["Chemistry"] = 23;
+topicHash["Astronomy"] = 24;
+topicHash["Genetics"] = 25;
+var stateChanged = true;
 var m = [0, 120, 0, 70],
     w = 500 - m[1] - m[3],
     h = 500 - m[0] - m[2],
@@ -24,9 +52,15 @@ d3.json("data/categories.json", function(json) {
   resetSelections();
   d3.select("#dap")      
     .style("cursor", "pointer")
-    .on("click", function() {resetSelections();});
+    .on("click", function() {resetSelections(); updateGlobe();});
 });
 
+function updateGlobe() {
+  removeCities(); 
+  collectAllTopics();
+  addCities(topics);
+  stateChanged = false;
+}
 function resetState(d) {
   d.state = false
   if (d.children) {
@@ -34,6 +68,11 @@ function resetState(d) {
   }
   if (d._children) {
     d._children.forEach(resetState);
+  }
+}
+function assignParents(d) {
+  if (d.children) {
+    d.children.forEach(function(c) { c.parent = d; assignParents(c);});
   }
 }
 
@@ -53,7 +92,26 @@ function resetSelections() {
   toggle(root.children[1].children[1]);
   resetState(root);
   root.state = true;
+  root.parent = null;
+  assignParents(root);
   update(root);
+}
+
+function collectAllTopics() {
+  topics = [];
+  collectTopics(root, root.state);
+}
+
+function collectTopics(d, state) {
+  if (d.children) {
+    d.children.forEach(function(node) {collectTopics(node,state || d.state)});
+  } else if (d._children) {
+    d._children.forEach(function(node) {collectTopics(node,state || d.state)});
+  } else {
+    if (d.state || state) {
+      topics.push(topicHash[d.name])
+    }
+  }
 }
 
 function update(source) {
@@ -155,6 +213,10 @@ function update(source) {
     d.x0 = d.x;
     d.y0 = d.y;
   });
+
+  if (stateChanged) {
+    updateGlobe();
+  }
 }
 
 // Toggle children.
@@ -169,9 +231,27 @@ function toggle(d) {
 }
 
 function toggleState(d) {
+  stateChanged = true;
   if (d.state) {
     d.state = false;
   } else {
     d.state = true;
+    // deselect parent states...
+    deselectDecendents(d);
+    if (d.parent) deselectAncestors(d.parent);
+  }
+}
+
+function deselectAncestors(d) {
+  d.state = false
+  if (d.parent) deselectAncestors(d.parent);
+}
+
+function deselectDecendents(d) {
+  if (d.children) {
+    d.children.forEach(function(c) { c.state = false; deselectDecendents(c);});
+  }
+  if (d._children) {
+    d._children.forEach(function(c) { c.state = false; deselectDecendents(c);});
   }
 }

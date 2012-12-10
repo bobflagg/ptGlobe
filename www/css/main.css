@@ -18,7 +18,7 @@ a {
   width: 1200px; }
 
 #globe {
-  margin-left: 0px;
+  margin-left: auto;
   margin-right: auto;
   float: left;
   pointer-events: all;
@@ -146,6 +146,7 @@ a {
   color: #a0a0a0; }
 
 .city {
+  fill:#C93131;
   stroke: #ccc;
   stroke-width: 1px; }
 

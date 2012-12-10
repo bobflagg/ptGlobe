@@ -26,7 +26,9 @@ function displayDetail(latitude, longitude, dataPath) {
       			//marker.append("svg:text").attr("x", padding + 7).attr("y", padding).attr("dy", ".31em")
           		//	.text(function(d) { return d.key; });
 	      		function transform(d) {
-	      			var homeLatLng = new google.maps.LatLng(d.value[1], d.value[0]);
+	      			//var homeLatLng = new google.maps.LatLng(d.value[1], d.value[0]);
+	      			console.log(d.value.longitude)
+	      			var homeLatLng = new google.maps.LatLng(d.value.latitude, d.value.longitude);
 					var marker = new MarkerWithLabel({
 						position: homeLatLng,
 						draggable: true,
@@ -36,12 +38,14 @@ function displayDetail(latitude, longitude, dataPath) {
 						labelClass: "labels" // the CSS class for the label
 					});
 					var iw = new google.maps.InfoWindow({
-						content: d.value[2].toString()
+						content: d.value.name.toString()
 					});
 					google.maps.event.addListener(marker, "click", function (e) { iw.open(map, marker); });
 
 
-	        		d = new google.maps.LatLng(d.value[1], d.value[0]);
+	        		d = new google.maps.LatLng(d.value.latitude, d.value.longitude);
+	        		//d = new google.maps.LatLng(d.value[1], d.value[0]);
+	        		//d = new google.maps.LatLng(d.value[1], d.value[0]);
 	        		d = projection.fromLatLngToDivPixel(d);
 	        		return d3.select(this)
 	            		.style("left", (d.x - padding) + "px")
@@ -53,4 +57,4 @@ function displayDetail(latitude, longitude, dataPath) {
   		overlay.setMap(map);
 	});
 }
-displayDetail(47.67399978637695, -122.12149810791016, 'data/Redmond-WA-US.json');      
+displayDetail(47.67399978637695, -122.12149810791016, 'data/Redmond-US.json');      

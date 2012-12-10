@@ -3,14 +3,16 @@
     <title>The sun never sets on Truonex</title>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="scripts/d3.v2.min.js"></script>
+    <!--<script type="text/javascript" src="http://marcneuwirth.com/experiments/globe/d3.custom.js"></script>    -->
     <script type="text/javascript" src="scripts/markerwithlabel.js"></script>   
     <script src="http://use.edgefonts.net/lato.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/category.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
 </head>
-
 <body>
 <div id="main-window">
+    <div id="extra">some extra stuff</div>
 	 <div id="category">
         <div id="titling"><h1>Project Locator</h1></div>
         <div id="main-text">
@@ -25,53 +27,17 @@
     </div>
     <div id="globe"></div>
     <div id="resume"></div>
-    <div id="map">..............</div>
+    <div id="map">detail map</div>
 </div>
-
 <footer>
-    <p><b>With Categories</b> | <a href="no-cat.html">Without Categories</a></p>
+    <!-- <p><b>With Categories</b> | <a href="no-cat.html">Without Categories</a></p>-->
 </footer>
+<script type="text/javascript" src="scripts/hash.js"></script>
+<script type="text/javascript" src="scripts/locator.js"></script>
 <script type="text/javascript" src="scripts/category.js"></script>
-<script type="text/javascript" src="scripts/globe.js"></script>
 <script type="text/javascript" src="scripts/detail.js"></script>
-<!--<script type="text/javascript">
-	var globeplaceholder = d3.select("#globe").append("svg:svg")
-    	.attr("width", 650)
-    	.attr("height", 650)
-  		.append("svg:g");
-</script>-->
 <script type="text/javascript">
-   // var windowDim = 600;
-   // var paddingDim = 50;
-    var windowDim = 400;
-    var paddingDim = 40;
-    // from Mike Bostock's 10-18-11 talk: https://github.com/mbostock/d3/blob/gh-pages/talk/20111018/world-countries.json
-    var countriesJSON = "data/worldcountries.geo.json";
-    var id = "#globe";
-    var resumeId = "#resume";
-    var keyId = "#key-place";
-    var cityTextId = "#current-city";
-    var cityLinkId = "#current-city-link";
-    var loadTimeId = "#load-time";
-
-    var keyTextId = "#key-text"
-
-    var arcWidth = -1;
-    var startColor = "#E6D97D";
-    var endColor = "#C93131";
-    var highlightColor = "#46422C";
-    var sampleCityId = "#sample-city";
-    var minMag = 5.5;
-    var currentDate = new Date().valueOf();
-    var dateDiff = 1000 * 60 * 60 * 24 * 30; // 30 days
-    var newDate = new Date(currentDate - dateDiff).valueOf();
-    var minSig = 550;
-
-    drawGlobe(id, windowDim, paddingDim, countriesJSON, 
-                resumeId, keyId, cityTextId, cityLinkId, sampleCityId, loadTimeId, keyTextId,
-                arcWidth, startColor, endColor, highlightColor);
+    showGlobe();
 </script>
-
 </body>
-
 </html>
