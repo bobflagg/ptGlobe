@@ -1,6 +1,7 @@
 // Globals.  I know, I know!
 var circle, loaded = false, path, projection, resume, stopRotating = false, svg;
-var map = d3.select("#extra");
+var sampleCity = d3.select("#sample-city");
+
 //map.attr("visibility", "hidden");
 // Define movement functions in advance of drawing SVG
 var m0, o0;
@@ -27,66 +28,35 @@ function mouseup() {
   }
 }
 function showGlobe() {
-    var windowDim = 400;
-    var paddingDim = 40;
+    var windowDim = 300;
+    var voffset = 8;
+    var offset = 40;
+    var paddingDim = 10;
     var origin = [-71.03, 25.37];
+    console.log(windowDim/2 + paddingDim/2);
     projection = d3.geo.azimuthal()
         .scale(windowDim/2) // scale factor, defaults to 200
         .origin(origin)
         .mode("orthographic")
-        .translate([(windowDim/2 + paddingDim/2), (windowDim/2 + paddingDim/2)]); // 25 pixel margin
-
-    //Setup zoom behavior
-    var zoom = d3.behavior.zoom(true)
-        .translate(projection.origin())
-        .scale(projection.scale())
-        .scaleExtent([100, 800])
-        .on("zoom", move);
-    function move() {
-        if(d3.event){
-            var scale = d3.event.scale;
-            if (scale > 280) {
-                svg.attr("visibility", "hidden");
-                //svg.style("display", "none");
-                //map.style("visibility", "block");
-                document.getElementById('map').style.display="block";
-            } else  {
-                svg.attr("visibility", "block")
-                //svg.style("display", "block")
-                //map.style("visibility", "hidden");
-                document.getElementById('map').style.display="none";            
-            }
-            var origin = [d3.event.translate[0] * -1, d3.event.translate[1]];
-            projection.scale(scale);
-            backgroundCircle.attr('r', scale);
-            path.pointRadius(2 * scale / projection.scale());
-            projection.origin(origin);
-            circle.origin(origin);            
-            refresh();
-        }
-        //d3.event.preventDefault();        
-    }
+        .translate([(windowDim/2 + paddingDim/2 + offset), (windowDim/2 + paddingDim/2 + voffset)]); // 25 pixel margin
 
     // generates a circle for clipping features before converting to paths
     circle = d3.geo.circle().origin(projection.origin());
     // Generates path function() for creating svg paths
     path = d3.geo.path().projection(projection);
     svg = d3.select("#globe").append("svg:svg")
-        .attr("width", (windowDim + paddingDim))
-        .attr("height", (windowDim + paddingDim))
-        // added
-        .on("mousedown", mousedown)
-        .append("g")
-        .call(zoom)
-        .on("dblclick.zoom", null);
+        .attr("width", (windowDim + paddingDim + offset))
+        .attr("height", (windowDim + paddingDim + voffset))
+        .on("mousedown", mousedown);
+
     // Now add a border circle
     var backgroundCircle = svg.selectAll("circle").data([0]).enter().append('circle')
         .attr("class", "globe-outline")
         .attr("fill-opacity", 0.0) // Override these with css for globe-outline
         .attr("stroke", "#000000") // Override these with css for globe-outline
         .attr("r", (windowDim+4)/2) // Add a 2 pixel buffer
-        .attr("cx", ((windowDim+paddingDim)/2))
-        .attr("cy", ((windowDim+paddingDim)/2));
+        .attr("cx", ((windowDim+paddingDim)/2 + offset))
+        .attr("cy", ((windowDim+paddingDim)/2 + voffset));
     // Load the GEOJSON data for the countries
     d3.json("data/worldcountries.geo.json", function(collection) {
         feature = svg.selectAll("path")
@@ -168,7 +138,7 @@ function refresh(duration) {
             },
             "r": function(d) {
                 if (updateCity(d)[2] === 1) {
-                    return pointSize(d.properties.mag);
+                    return pointSize(d.properties.numProjects);
                 } else {
                     return 0;
                 }
@@ -192,13 +162,27 @@ function addCities(topics) {
         points.data(features).enter()
             .append("svg:circle")
             .on("click", function(d) {
-                displayDetail(d.geometry.coordinates[1], d.geometry.coordinates[0], 'data/'+
+                // display the map
+                $("#map-wrapper").slideDown();
+                $("#map-wrapper").css("visibility","visible");
+                $("#globe-wrapper").slideUp();
+                displayDetail(d.geometry.coordinates[1], d.geometry.coordinates[0], 'data/city/'+
                     d.properties.city.toString()+"-"+
                     d.properties.country.toString()+
                     '.json');      
                 element = d3.select(this);
                 element.attr("fill", "#000000")
                 .attr("stroke-width", 2);
+
+                var numSites = d.properties.numSites;
+                if (numSites == 1) numSites = "one development site"
+                else numSites =  numSites+" development sites"
+                var numProjects = d.properties.numProjects;
+                if (numProjects == 1) numProjects = "one project"
+                else numProjects =  numProjects+" projects"
+                var text = d.properties.city+": "+numSites+"; "+numProjects+".";  
+                text += " Click on a site tag for details."   
+                sampleCity.text(text);
             })                
             .attr("class", "city")
             .attr("cx", function(d) {
@@ -208,22 +192,26 @@ function addCities(topics) {
                 return projection(d.geometry.coordinates)[1];
             })
             .append("svg:title").text(function(d) { 
-                var count = d.properties.mag;
-                var message = " with "+count;
-                if (count > 1) message = d.properties.city+" has "+count+" project sites.";
-                else message = d.properties.city+" has one project site.";
-                return message+"  Click to see details on the map below."; 
+                var numSites = d.properties.numSites;
+                if (numSites == 1) numSites = "one development site"
+                else numSites =  numSites+" development sites"
+                var numProjects = d.properties.numProjects;
+                if (numProjects == 1) numProjects = "one project"
+                else numProjects =  numProjects+" projects"
+                var text = d.properties.city+": "+numSites+"; "+numProjects+".";  
+                text += " Click on the city for details."          
+                return text;       
             });
         if (stopRotating) {
             points.transition()
                 .duration(500)
                 .attr("r", function(d) {
-                    return pointSize(d.properties.mag);
+                    return pointSize(d.properties.numProjects);
                 });
             refresh();
         } else {
             points.attr("r", function(d) {
-                return pointSize(d.properties.mag);
+                return pointSize(d.properties.numProjects);
             });
         }
         loaded = true;

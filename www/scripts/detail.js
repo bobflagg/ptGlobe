@@ -1,7 +1,10 @@
 function displayDetail(latitude, longitude, dataPath) {
+	console.log("dataPath: "+dataPath);
+	console.log("city latitude: "+latitude);
+	console.log("city longitude: "+longitude);
 	// Create the Google Map…
 	var map = new google.maps.Map(d3.select("#map").node(), {
-	  zoom: 8,
+	  zoom: 9,
 	  center: new google.maps.LatLng(latitude, longitude),
 	  mapTypeId: google.maps.MapTypeId.TERRAIN
 	});
@@ -27,7 +30,8 @@ function displayDetail(latitude, longitude, dataPath) {
           		//	.text(function(d) { return d.key; });
 	      		function transform(d) {
 	      			//var homeLatLng = new google.maps.LatLng(d.value[1], d.value[0]);
-	      			console.log(d.value.longitude)
+	      			console.log("site latitude: "+d.value.latitude)
+	      			console.log("site longitude: "+d.value.longitude)
 	      			var homeLatLng = new google.maps.LatLng(d.value.latitude, d.value.longitude);
 					var marker = new MarkerWithLabel({
 						position: homeLatLng,
@@ -57,4 +61,4 @@ function displayDetail(latitude, longitude, dataPath) {
   		overlay.setMap(map);
 	});
 }
-displayDetail(47.67399978637695, -122.12149810791016, 'data/Redmond-US.json');      
+displayDetail(47.67399978637695, -122.12149810791016, 'data/city/Redmond-US.json');      

@@ -1,0 +1,19 @@
+[
+    {
+        "latitude": 0.0,
+        "id": 49,
+        "name": "http://ase.tufts.edu/DevTech/ScratchJr/ScratchJrHome.asp",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "city": "Somerville",
+        "name": "Eyenetra",
+        "country": "US",
+        "region": "MA",
+        "longitude": -71.0994968,
+        "address": "-",
+        "latitude": 42.3875968,
+        "id": 64
+    }
+]

@@ -1,0 +1,117 @@
+[
+    {
+        "latitude": 0.0,
+        "id": 91,
+        "name": "http://www.voipdrupal.org",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 56,
+        "name": "http://brin.gy",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 8,
+        "name": "http://iknow.mit.edu/",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 22,
+        "name": "http://changingplaces.mit.edu/research/73-citycar-folding-chassis-",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 57,
+        "name": "http://mtm.cba.mit.edu/machines/mtm_lj/Site/MTM_Little_John.html",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 13,
+        "name": "http://geo.gy",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 44,
+        "name": "http://neuromin.de/rct/funk2.html",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 42.3799993,
+        "id": 1,
+        "name": "Berkman Center for Internet & Society at Harvard",
+        "longitude": -71.117959,
+        "address": "23 Everett St, Harvard University"
+    },
+    {
+        "latitude": 0.0,
+        "id": 53,
+        "name": "http://dotstorm.byconsens.us",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 28,
+        "name": "http://www.truthgoggl.es",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "city": "Cambridge",
+        "name": "MIT Media Lab",
+        "country": "US",
+        "region": "MA",
+        "longitude": -71.0912204,
+        "address": "77 Massachusetts Ave",
+        "latitude": 42.3584488,
+        "id": 2
+    },
+    {
+        "latitude": 0.0,
+        "id": 88,
+        "name": "http://betweenthebars.org",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 10,
+        "name": "http://rationale.csail.mit.edu/project_assist_a_shrewd_sketch_interpretation.html",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 40,
+        "name": "http://groups.csail.mit.edu/drl/wiki/index.php?title=Collision_Avoidance_for_Persistent_Monitoring_in_Multi-Robot_Systems_with_Intersecting_Trajectories",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 16,
+        "name": "http://day.scratch.mit.edu",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 23,
+        "name": "http://info.scratch.mit.edu/collabcamp2011",
+        "longitude": 0.0,
+        "address": "-"
+    }
+]

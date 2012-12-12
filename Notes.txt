@@ -26,4 +26,16 @@ Next Steps:
 [15:42:23] Li Bian: 5. and I will give you more project data from MIT Media Lab
 [16:15:07] Call from Li Bian, duration 01:21:18.
 
+    $(document).ready(function() {
+        $("#globe-link").click(function() {
+            $("#map-wrapper").css("visibility","visible");
+            $("#globe-wrapper").slideDown();
+            $("#map-wrapper").slideUp();
+        });
+        $("#map-link").click(function() {
+            $("#map-wrapper").slideDown();
+            $("#map-wrapper").css("visibility","visible");
+            $("#globe-wrapper").slideUp();
+        });
+    });
 

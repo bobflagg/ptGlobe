@@ -1,0 +1,61 @@
+[
+    {
+        "latitude": 0.0,
+        "id": 62,
+        "name": "http://ctat.pact.cs.cmu.edu/",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 63,
+        "name": "http://edelstein.pebbles.cs.cmu.edu/jadeite/",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 67,
+        "name": "http://pact.cs.cmu.edu/",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 76,
+        "name": "http://www.ri.cmu.edu/research_project_detail.html?project_id=438&menu_id=261",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 69,
+        "name": "http://graphics.cs.cmu.edu/projects/photoclipart/",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "latitude": 0.0,
+        "id": 78,
+        "name": "http://www.cs.cmu.edu/~mllee/mem.html",
+        "longitude": 0.0,
+        "address": "-"
+    },
+    {
+        "city": "Pittsburgh",
+        "name": "Human-Computer Interaction Institute",
+        "country": "US",
+        "region": "PA",
+        "longitude": -79.9415706,
+        "address": "5000 Forbes Ave, Carnegie Mellon University",
+        "latitude": 40.4435037,
+        "id": 38
+    },
+    {
+        "latitude": 0.0,
+        "id": 80,
+        "name": "http://www.topobo.com/",
+        "longitude": 0.0,
+        "address": "-"
+    }
+]

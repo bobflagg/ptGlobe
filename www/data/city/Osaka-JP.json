@@ -1,0 +1,23 @@
+[
+    {
+        "latitude": 35.3882757,
+        "id": 73,
+        "name": "Inakage Laboratory",
+        "longitude": 139.4273482,
+        "address": "Endo 5322 Fujisawa"
+    },
+    {
+        "latitude": 34.6864013671875,
+        "id": 74,
+        "name": "Keita Watanabe",
+        "longitude": 135.52000427246094,
+        "address": "-"
+    },
+    {
+        "latitude": 34.4384719,
+        "id": 83,
+        "name": "Hiroshima City University",
+        "longitude": 132.4144317,
+        "address": "-"
+    }
+]

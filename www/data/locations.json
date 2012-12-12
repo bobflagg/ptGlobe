@@ -1,0 +1,1863 @@
+{
+    "drawdio.com": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "eyenetra.com": {
+        "city": "Somerville",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 42.3875968,
+            "name": "Eyenetra",
+            "longitude": -71.0994968,
+            "address": "-",
+            "city": "Somerville",
+            "country": "US",
+            "region": "MA"
+        },
+        "longitude": -71.0994968,
+        "latitude": 42.3875968
+    },
+    "hcii.cmu.edu": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 40.4435037,
+            "name": "Human-Computer Interaction Institute",
+            "longitude": -79.9415706,
+            "address": "5000 Forbes Ave, Carnegie Mellon University",
+            "city": "Pittsburgh",
+            "country": "US",
+            "region": "PA"
+        },
+        "longitude": -79.95610046386719,
+        "latitude": 40.44390106201172
+    },
+    "cs.cmu.edu": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.cs.cmu.edu/~mllee/mem.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -79.95610046386719,
+        "latitude": 40.44390106201172
+    },
+    "scratched.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "topobo.com": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.topobo.com/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -79.92939758300781,
+        "latitude": 40.45309829711914
+    },
+    "people.tuebingen.mpg.de": {
+        "city": null,
+        "country": "DE",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://people.tuebingen.mpg.de/mkiefel/projects/intrinsic/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 9.0,
+        "latitude": 51.0
+    },
+    "ishback.com": {
+        "city": "Provo",
+        "country": "US",
+        "region": "UT",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://ishback.com/lab/letterpress/letterpress.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.61329650878906,
+        "latitude": 40.218101501464844
+    },
+    "cs.berkeley.edu": {
+        "city": "Berkeley",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.cs.berkeley.edu/~peggychi/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.25360107421875,
+        "latitude": 37.866798400878906
+    },
+    "commons.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "cameraculture.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "newmed.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "raskar.info": {
+        "city": "Scottsdale",
+        "country": "US",
+        "region": "AZ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://raskar.info/cornar",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.8906021118164,
+        "latitude": 33.611900329589844
+    },
+    "graphics.cs.msu.ru": {
+        "city": "Baku",
+        "country": "RU",
+        "region": null,
+        "site": {
+            "latitude": 40.4039976,
+            "name": "Graphics&Media Lab",
+            "longitude": 49.760132,
+            "address": "Moscow State University, Baku"
+        },
+        "longitude": 49.8676232,
+        "latitude": 40.4349504
+    },
+    "mediacloud.org": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 42.3799993,
+            "name": "Berkman Center for Internet & Society at Harvard",
+            "longitude": -71.117959,
+            "address": "23 Everett St, Harvard University"
+        },
+        "longitude": -71.13289642333984,
+        "latitude": 42.380001068115234
+    },
+    "github.com": {
+        "city": "San Antonio",
+        "country": "US",
+        "region": "TX",
+        "site": {
+            "latitude": 0.0,
+            "name": "https://github.com/natematias/our-things",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -98.39869689941406,
+        "latitude": 29.48889923095703
+    },
+    "robotic.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "twitterweather.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "cs.stanford.edu": {
+        "city": "Stanford",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://cs.stanford.edu/content/dtools",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.1719970703125,
+        "latitude": 37.41780090332031
+    },
+    "betweenthebars.org": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://betweenthebars.org",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "computerclubhouse.org": {
+        "city": "Boston",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.computerclubhouse.org",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.06739807128906,
+        "latitude": 42.36159896850586
+    },
+    "davidsjunnesson.com": {
+        "city": "Brea",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.davidsjunnesson.com/#18",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -117.86119842529297,
+        "latitude": 33.92689895629883
+    },
+    "atlas.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "graphics.stanford.edu": {
+        "city": "Stanford",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://graphics.stanford.edu/papers/eheap/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.1719970703125,
+        "latitude": 37.41780090332031
+    },
+    "cbs.gatech.edu": {
+        "city": "Atlanta",
+        "country": "US",
+        "region": "GA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.cbs.gatech.edu/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -84.3770980834961,
+        "latitude": 33.77190017700195
+    },
+    "ctat.pact.cs.cmu.edu": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://ctat.pact.cs.cmu.edu/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -79.95610046386719,
+        "latitude": 40.44390106201172
+    },
+    "mediameter.org": {
+        "city": "Fremont",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://mediameter.org/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -121.98860168457031,
+        "latitude": 37.548301696777344
+    },
+    "hideakimatsui.com": {
+        "city": "San Antonio",
+        "country": "US",
+        "region": "TX",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.hideakimatsui.com/Generative-Jewelry",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -98.53109741210938,
+        "latitude": 29.388399124145508
+    },
+    "research.microsoft.com": {
+        "city": "Redmond",
+        "country": "US",
+        "region": "WA",
+        "site": {
+            "latitude": 47.6381787, 
+            "name": "Microsoft Research Redmond",
+            "longitude": -122.1314698,
+            "address": "One Microsoft Way"
+        },
+        "longitude": -122.12149810791016,
+        "latitude": 47.67399978637695
+    },
+    "ambient.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "snibbe.com": {
+        "city": "Culver City",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.snibbe.com/projects/interactive/motionphone",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -118.3927993774414,
+        "latitude": 34.020198822021484
+    },
+    "ciid.dk": {
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "region": "-",
+        "site": {
+            "city": "Copenhagen",
+            "name": "Copenhagen Institute Of Interaction Design ApS",
+            "country": "Denmark",
+            "region": "-",
+            "longitude": 12.5934978,
+            "address": "Toldbodgade 37",
+            "latitude": 55.6824055
+        },
+        "longitude":12.5683371,
+        "latitude":55.6760968
+    },
+    "dotstorm.byconsens.us": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://dotstorm.byconsens.us",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "csc.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "marcinignac.com": {
+        "city": "Garden City",
+        "country": "US",
+        "region": "NY",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://marcinignac.com/experiments/noise-particles/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -73.6343994140625,
+        "latitude": 40.72760009765625
+    },
+    "powers.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "hci.stanford.edu": {
+        "city": "Stanford",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://hci.stanford.edu/research/prototyping/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.1719970703125,
+        "latitude": 37.41780090332031
+    },
+    "day.scratch.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://day.scratch.mit.edu",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "jespersvenning.com": {
+        "city": null,
+        "country": "DK",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://jespersvenning.com/ciidprojects/androgynous/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 10.0,
+        "latitude": 56.0
+    },
+    "doppellab.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "graphics.cs.cmu.edu": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://graphics.cs.cmu.edu/projects/photoclipart/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -79.95610046386719,
+        "latitude": 40.44390106201172
+    },
+    "visionblocks.org": {
+        "city": "Ashburn",
+        "country": "US",
+        "region": "VA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://visionblocks.org",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -77.48750305175781,
+        "latitude": 39.043701171875
+    },
+    "lilypond.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "eyecatra.com": {
+        "city": "Scottsdale",
+        "country": "US",
+        "region": "AZ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://eyecatra.com",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.8906021118164,
+        "latitude": 33.611900329589844
+    },
+    "pldb.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "hci.comp.nus.edu.sg": {
+        "city": null,
+        "country": "SG",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://hci.comp.nus.edu.sg/projects/cat/catcushion.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 103.80000305175781,
+        "latitude": 1.3667000532150269
+    },
+    "groups.csail.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://groups.csail.mit.edu/drl/wiki/index.php?title=Collision_Avoidance_for_Persistent_Monitoring_in_Multi-Robot_Systems_with_Intersecting_Trajectories",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "lazytruth.com": {
+        "city": "Provo",
+        "country": "US",
+        "region": "UT",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://lazytruth.com",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.61329650878906,
+        "latitude": 40.218101501464844
+    },
+    "openmind.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "inakage.net": {
+        "city": "Osaka",
+        "country": "JP",
+        "region": "32",
+        "site": {
+            "latitude": 35.3882757,
+            "name": "Inakage Laboratory",
+            "longitude": 139.4273482,
+            "address": "Endo 5322 Fujisawa"
+        },
+        "longitude": 135.52000427246094,
+        "latitude": 34.6864013671875
+    },
+    "umiacs.umd.edu": {
+        "city": "College Park",
+        "country": "US",
+        "region": "MD",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.umiacs.umd.edu/~aagrawal/gradcam/gradcam.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -76.93170166015625,
+        "latitude": 39.00120162963867
+    },
+    "dukodestudio.com": {
+        "city": "Southfield",
+        "country": "US",
+        "region": "MI",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://dukodestudio.com/work/19-ongoing/116-lumenhattio?layout=workdefault",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -83.23069763183594,
+        "latitude": 42.46500015258789
+    },
+    "iknow.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://iknow.mit.edu/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "moraveji.org": {
+        "city": "Brea",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://moraveji.org/projects_med.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -117.86119842529297,
+        "latitude": 33.92689895629883
+    },
+    "brin.gy": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://brin.gy",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "slowdisplay.org": {
+        "city": null,
+        "country": "DE",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://slowdisplay.org",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 9.0,
+        "latitude": 51.0
+    },
+    "flong.com": {
+        "city": "Culver City",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.flong.com/projects/zoo/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -118.3927993774414,
+        "latitude": 34.020198822021484
+    },
+    "pranavmistry.com": {
+        "city": "Provo",
+        "country": "US",
+        "region": "UT",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.pranavmistry.com/projects/precursor",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.61329650878906,
+        "latitude": 40.218101501464844
+    },
+    "departmentofplay.org": {
+        "city": "Herndon",
+        "country": "US",
+        "region": "VA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.departmentofplay.org",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -77.39360046386719,
+        "latitude": 38.92660140991211
+    },
+    "ase.tufts.edu": {
+        "city": "Somerville",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://ase.tufts.edu/DevTech/ScratchJr/ScratchJrHome.asp",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.11930084228516,
+        "latitude": 42.40190124511719
+    },
+    "voipdrupal.org": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.voipdrupal.org",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "pixels.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "geo.gy": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://geo.gy",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "pulse.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "wantingwants.com": {
+        "city": "San Antonio",
+        "country": "US",
+        "region": "TX",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://wantingwants.com/Snow-carriage",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -98.53109741210938,
+        "latitude": 29.388399124145508
+    },
+    "designresearch.fi": {
+        "city": null,
+        "country": "FI",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://designresearch.fi/blogs/search/about/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 26.0,
+        "latitude": 64.0
+    },
+    "cognotes.net": {
+        "city": "Fort Lauderdale",
+        "country": "US",
+        "region": "FL",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.cognotes.net",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -80.1272964477539,
+        "latitude": 26.120899200439453
+    },
+    "vimeopro.com": {
+        "city": "White Plains",
+        "country": "US",
+        "region": "NY",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://vimeopro.com/msradesignteam/portfolio/page/2",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -73.75800323486328,
+        "latitude": 41.02909851074219
+    },
+    "demontjoye.com": {
+        "city": null,
+        "country": "FR",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://demontjoye.com/projects.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 2.0,
+        "latitude": 46.0
+    },
+    "continuumfashion.com": {
+        "city": "Provo",
+        "country": "US",
+        "region": "UT",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.continuumfashion.com/D.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.61329650878906,
+        "latitude": 40.218101501464844
+    },
+    "persistent.org": {
+        "city": "Osaka",
+        "country": "JP",
+        "region": "32",
+        "site": {
+            "latitude": 34.6864013671875,
+            "name": "Keita Watanabe",
+            "longitude": 135.52000427246094,
+            "address": "-"
+        },
+        "longitude": 135.52000427246094,
+        "latitude": 34.6864013671875
+    },
+    "calliope.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "ri.cmu.edu": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.ri.cmu.edu/research_project_detail.html?project_id=438&menu_id=261",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -79.95610046386719,
+        "latitude": 40.44390106201172
+    },
+    "neuromin.de": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://neuromin.de/rct/funk2.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "affect.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "nickgillian.com": {
+        "city": "Provo",
+        "country": "US",
+        "region": "UT",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.nickgillian.com/software/sec",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.61329650878906,
+        "latitude": 40.218101501464844
+    },
+    "sandcanvas.com": {
+        "city": "San Antonio",
+        "country": "US",
+        "region": "TX",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://sandcanvas.com/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -98.39869689941406,
+        "latitude": 29.48889923095703
+    },
+    "web.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "vozmob.net": {
+        "city": "Burnaby",
+        "country": "CA",
+        "region": "BC",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://vozmob.net/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.94999694824219,
+        "latitude": 49.25
+    },
+    "social.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "opticsinfobase.org": {
+        "city": "Fairfax",
+        "country": "US",
+        "region": "VA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.opticsinfobase.org/abstract.cfm?uri=oe-18-10-10762",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -77.26300048828125,
+        "latitude": 38.86050033569336
+    },
+    "cloobot.com": {
+        "city": "Ashburn",
+        "country": "US",
+        "region": "VA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://cloobot.com",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -77.48750305175781,
+        "latitude": 39.043701171875
+    },
+    "opera.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "rationale.csail.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://rationale.csail.mit.edu/project_assist_a_shrewd_sketch_interpretation.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "davidsmall.com": {
+        "city": "Culver City",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.davidsmall.com/portfolio/boston-federal-reserve-neea-generator/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -118.3927993774414,
+        "latitude": 34.020198822021484
+    },
+    "edelstein.pebbles.cs.cmu.edu": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://edelstein.pebbles.cs.cmu.edu/jadeite/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -79.95610046386719,
+        "latitude": 40.44390106201172
+    },
+    "datatherapy.org": {
+        "city": null,
+        "country": "FR",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://datatherapy.org",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 2.0,
+        "latitude": 46.0
+    },
+    "travisrich.com": {
+        "city": null,
+        "country": "US",
+        "region": "DE",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://travisrich.com/portfolio/psd",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -75.51480102539062,
+        "latitude": 39.34980010986328
+    },
+    "synth.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "moodmeter.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "perspectum.com": {
+        "city": "Pocatello",
+        "country": "US",
+        "region": "ID",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.perspectum.com/soundforms/sketches.htm",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -112.36309814453125,
+        "latitude": 42.974700927734375
+    },
+    "portfolio.tobiastoft.dk": {
+        "city": "San Antonio",
+        "country": "US",
+        "region": "TX",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://portfolio.tobiastoft.dk/Synthesising-Personality",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -98.53109741210938,
+        "latitude": 29.388399124145508
+    },
+    "labcast.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "info.scratch.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://info.scratch.mit.edu/collabcamp2011",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "newsjack.in": {
+        "city": null,
+        "country": "FR",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://newsjack.in",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 2.0,
+        "latitude": 46.0
+    },
+    "obm.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "youtube.com": {
+        "city": "Mountain View",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.youtube.com/watch?v=TxHiTjapTqg",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.05740356445312,
+        "latitude": 37.4192008972168
+    },
+    "johnkestner.com": {
+        "city": "Phoenix",
+        "country": "US",
+        "region": "AZ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://johnkestner.com/proximeter/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -112.07119750976562,
+        "latitude": 33.44990158081055
+    },
+    "civic.mit.edu": {
+        "city": "Fremont",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://civic.mit.edu/projects/c4fcm/aago-mobile-media-diaries-for-youth-citizen-journalists",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -121.89620208740234,
+        "latitude": 37.515499114990234
+    },
+    "robmorrismusic.com": {
+        "city": "Scottsdale",
+        "country": "US",
+        "region": "AZ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.robmorrismusic.com/GestureGuitar.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.8906021118164,
+        "latitude": 33.611900329589844
+    },
+    "blog.ishback.com": {
+        "city": "Provo",
+        "country": "US",
+        "region": "UT",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://blog.ishback.com/?p=1025",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.61329650878906,
+        "latitude": 40.218101501464844
+    },
+    "kinectedconference.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "hlt.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "shaunsalzberg.com": {
+        "city": "Ashburn",
+        "country": "US",
+        "region": "VA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://shaunsalzberg.com/medialab/homemaestro",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -77.48750305175781,
+        "latitude": 39.043701171875
+    },
+    "hd.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "designinterface.jp": {
+        "city": "Tokyo",
+        "country": "JP",
+        "region": "40",
+        "site": {
+            "latitude": 35.7150918,
+            "name": "Igarashi Design Interfaces Project",
+            "longitude": 139.7515696,
+            "address": "1-28-1 Koishikawa, Bunkyo"
+        },
+        "longitude": 139.75140380859375,
+        "latitude": 35.685001373291016
+    },
+    "pact.cs.cmu.edu": {
+        "city": "Pittsburgh",
+        "country": "US",
+        "region": "PA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://pact.cs.cmu.edu/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -79.95610046386719,
+        "latitude": 40.44390106201172
+    },
+    "visionontap.com": {
+        "city": "Ashburn",
+        "country": "US",
+        "region": "VA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://visionontap.com",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -77.48750305175781,
+        "latitude": 39.043701171875
+    },
+    "cities.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "femtophoto.info": {
+        "city": "Scottsdale",
+        "country": "US",
+        "region": "AZ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://femtophoto.info",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.8906021118164,
+        "latitude": 33.611900329589844
+    },
+    "cp.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "thechameleonguitar.com": {
+        "city": "Scottsdale",
+        "country": "US",
+        "region": "AZ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.thechameleonguitar.com/Chameleon_Guitar/Home.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.8906021118164,
+        "latitude": 33.611900329589844
+    },
+    "vimeo.com": {
+        "city": "White Plains",
+        "country": "US",
+        "region": "NY",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://vimeo.com/9512436",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -73.75800323486328,
+        "latitude": 41.02909851074219
+    },
+    "eco.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "agents.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "trac.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "charmme.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "viral.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "specklesense.org": {
+        "city": null,
+        "country": "SE",
+        "region": null,
+        "site": {
+            "latitude": 0.0,
+            "name": "http://specklesense.org/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": 15.0,
+        "latitude": 62.0
+    },
+    "conceptnet.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "roar.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "tangible.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "fluid.media.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "city": "Cambridge",
+            "name": "MIT Media Lab",
+            "country": "US",
+            "region": "MA",
+            "longitude": -71.0912204,
+            "address": "77 Massachusetts Ave",
+            "latitude": 42.3584488
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "hedmanresume.blogspot.com": {
+        "city": "Mountain View",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://hedmanresume.blogspot.com/search/label/Research",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.05740356445312,
+        "latitude": 37.4192008972168
+    },
+    "mtm.cba.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://mtm.cba.mit.edu/machines/mtm_lj/Site/MTM_Little_John.html",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "hero-worship.com": {
+        "city": "Scottsdale",
+        "country": "US",
+        "region": "AZ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://hero-worship.com/portfolio/codeable-objects/?p=1718",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -111.8906021118164,
+        "latitude": 33.611900329589844
+    },
+    "sites.google.com": {
+        "city": "Mountain View",
+        "country": "US",
+        "region": "CA",
+        "site": {
+            "latitude": 0.0,
+            "name": "https://sites.google.com/site/elliottstoragesite/Home/autismStudy.pdf?attredirects=0&d=1",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -122.05740356445312,
+        "latitude": 37.4192008972168
+    },
+    "vojo.co": {
+        "city": "Absecon",
+        "country": "US",
+        "region": "NJ",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://vojo.co",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -74.47730255126953,
+        "latitude": 39.489898681640625
+    },
+    "www-sens.sys.es.osaka-u.ac.jp": {
+        "city": "Osaka",
+        "country": "JP",
+        "region": "32",
+        "site": {
+            "latitude": 34.4384719,
+            "name": "Hiroshima City University",
+            "longitude": 132.4144317,
+            "address": "-"
+        },
+        "longitude": 135.52000427246094,
+        "latitude": 34.6864013671875
+    },
+    "shuangz.com": {
+        "city": "Crownsville",
+        "country": "US",
+        "region": "MD",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://shuangz.com/projects/tofbrdf-sa11/",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -76.60690307617188,
+        "latitude": 39.03010177612305
+    },
+    "truthgoggl.es": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://www.truthgoggl.es",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    },
+    "changingplaces.mit.edu": {
+        "city": "Cambridge",
+        "country": "US",
+        "region": "MA",
+        "site": {
+            "latitude": 0.0,
+            "name": "http://changingplaces.mit.edu/research/73-citycar-folding-chassis-",
+            "longitude": 0.0,
+            "address": "-"
+        },
+        "longitude": -71.10279846191406,
+        "latitude": 42.364601135253906
+    }
+}

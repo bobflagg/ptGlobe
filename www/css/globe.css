@@ -1,0 +1,61 @@
+#globe-wrapper {
+  width:400px;
+  height:300px;
+  background:#f9f6f5;
+}
+#globe {
+  margin-left: 0px;
+  margin-right: auto;
+  float: left;
+  pointer-events: all;
+  background-color: #f9f6f5;
+  width: 400px; }
+
+.globe-outline {
+  fill: #f9f6f5;
+  fill-opacity: 1.0;
+  stroke: #a9b4c0;
+  stroke-width: 3; 
+}
+.bounding-arc {
+  stroke: none;
+  fill: #c2cdd8; 
+}
+#resume {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  width: 60px;
+  height: 40px;
+  z-index: 2; 
+}
+.resume-stopped {
+  background-image: url(../images/svg_playlt.svg);
+  background-repeat: no-repeat; 
+}
+.resume-playing {
+  background-image: url(../images/svg_pauselt.svg);
+  background-repeat: no-repeat; 
+}
+.city-selected {
+  stroke: #46422C;
+  stroke-width: 2px; 
+}
+path {
+  fill: #f00;
+  stroke: #fff; 
+}
+path.country {
+  fill: #CED3D8;
+  stroke: #fff; 
+}
+path.city {
+  fill: #f00;
+  stroke: #f00;
+  z-index: 2; 
+}
+.city {
+  fill:#C93131;
+  stroke: #ccc;
+  stroke-width: 1px; 
+}

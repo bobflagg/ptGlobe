@@ -1,5 +1,6 @@
 {
-    "type": "FeatureCollection",
+    "Pittsburgh::US": {},
+    "Fort Lauderdale::US": {},
     "features": [
         {
             "geometry": {
@@ -11,6 +12,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 8,
                 "city": "Pittsburgh",
                 "topics": [
                     1,
@@ -39,7 +41,7 @@
                     24,
                     25
                 ],
-                "mag": 28,
+                "numProjects": 28,
                 "country": "US"
             },
             "id": "Pittsburgh::US"
@@ -54,11 +56,12 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Fort Lauderdale",
                 "topics": [
                     20
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Fort Lauderdale::US"
@@ -73,6 +76,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "None",
                 "topics": [
                     1,
@@ -94,7 +98,7 @@
                     24,
                     25
                 ],
-                "mag": 11,
+                "numProjects": 11,
                 "country": "DK"
             },
             "id": "None::DK"
@@ -109,12 +113,13 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "None",
                 "topics": [
                     3,
                     9
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "FI"
             },
             "id": "None::FI"
@@ -129,6 +134,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 2,
                 "city": "None",
                 "topics": [
                     3,
@@ -140,7 +146,7 @@
                     18,
                     20
                 ],
-                "mag": 2,
+                "numProjects": 2,
                 "country": "DE"
             },
             "id": "None::DE"
@@ -155,6 +161,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 2,
                 "city": "White Plains",
                 "topics": [
                     7,
@@ -163,7 +170,7 @@
                     13,
                     14
                 ],
-                "mag": 4,
+                "numProjects": 4,
                 "country": "US"
             },
             "id": "White Plains::US"
@@ -178,6 +185,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 5,
                 "city": "San Antonio",
                 "topics": [
                     1,
@@ -206,7 +214,7 @@
                     24,
                     25
                 ],
-                "mag": 13,
+                "numProjects": 13,
                 "country": "US"
             },
             "id": "San Antonio::US"
@@ -215,12 +223,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -96.83529663085938,
-                    32.929901123046875
+                    12.5683371,
+                    55.6760968
                 ]
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Copenhagen",
                 "topics": [
                     1,
@@ -249,7 +258,7 @@
                     24,
                     25
                 ],
-                "mag": 379,
+                "numProjects": 379,
                 "country": "Denmark"
             },
             "id": "Copenhagen::Denmark"
@@ -264,6 +273,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 3,
                 "city": "None",
                 "topics": [
                     1,
@@ -276,7 +286,7 @@
                     22,
                     25
                 ],
-                "mag": 3,
+                "numProjects": 3,
                 "country": "FR"
             },
             "id": "None::FR"
@@ -291,13 +301,14 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Atlanta",
                 "topics": [
                     6,
                     7,
                     22
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Atlanta::US"
@@ -306,22 +317,23 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    100.0,
-                    60.0
+                    49.8676232,
+                    40.4349504
                 ]
             },
             "type": "Feature",
             "properties": {
-                "city": "None",
+                "numSites": 1,
+                "city": "Baku",
                 "topics": [
                     3,
                     13,
                     18
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "RU"
             },
-            "id": "None::RU"
+            "id": "Baku::RU"
         },
         {
             "geometry": {
@@ -333,12 +345,13 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Herndon",
                 "topics": [
                     3,
                     23
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Herndon::US"
@@ -353,6 +366,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 3,
                 "city": "Stanford",
                 "topics": [
                     1,
@@ -381,53 +395,10 @@
                     24,
                     25
                 ],
-                "mag": 38,
+                "numProjects": 38,
                 "country": "US"
             },
             "id": "Stanford::US"
-        },
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -71.10279846191406,
-                    42.364601135253906
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "city": "Cambridge",
-                "topics": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7,
-                    8,
-                    9,
-                    10,
-                    11,
-                    12,
-                    13,
-                    14,
-                    15,
-                    16,
-                    17,
-                    18,
-                    19,
-                    20,
-                    21,
-                    22,
-                    23,
-                    24,
-                    25
-                ],
-                "mag": 325,
-                "country": "USA"
-            },
-            "id": "Cambridge::USA"
         },
         {
             "geometry": {
@@ -439,13 +410,14 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Absecon",
                 "topics": [
                     13,
                     14,
                     15
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Absecon::US"
@@ -460,6 +432,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Garden City",
                 "topics": [
                     1,
@@ -488,7 +461,7 @@
                     24,
                     25
                 ],
-                "mag": 39,
+                "numProjects": 39,
                 "country": "US"
             },
             "id": "Garden City::US"
@@ -503,13 +476,14 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Fairfax",
                 "topics": [
                     3,
                     12,
                     15
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Fairfax::US"
@@ -524,6 +498,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 4,
                 "city": "Ashburn",
                 "topics": [
                     3,
@@ -538,7 +513,7 @@
                     22,
                     24
                 ],
-                "mag": 4,
+                "numProjects": 4,
                 "country": "US"
             },
             "id": "Ashburn::US"
@@ -553,6 +528,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Tokyo",
                 "topics": [
                     1,
@@ -580,7 +556,7 @@
                     24,
                     25
                 ],
-                "mag": 35,
+                "numProjects": 35,
                 "country": "JP"
             },
             "id": "Tokyo::JP"
@@ -595,12 +571,13 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Boston",
                 "topics": [
                     1,
                     23
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Boston::US"
@@ -615,13 +592,14 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Crownsville",
                 "topics": [
                     4,
                     12,
                     22
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Crownsville::US"
@@ -636,13 +614,14 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 2,
                 "city": "Fremont",
                 "topics": [
                     5,
                     22,
                     24
                 ],
-                "mag": 2,
+                "numProjects": 2,
                 "country": "US"
             },
             "id": "Fremont::US"
@@ -657,11 +636,12 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Burnaby",
                 "topics": [
                     18
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "CA"
             },
             "id": "Burnaby::CA"
@@ -676,6 +656,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Phoenix",
                 "topics": [
                     1,
@@ -685,7 +666,7 @@
                     23,
                     24
                 ],
-                "mag": 3,
+                "numProjects": 3,
                 "country": "US"
             },
             "id": "Phoenix::US"
@@ -700,6 +681,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Redmond",
                 "topics": [
                     1,
@@ -726,7 +708,7 @@
                     24,
                     25
                 ],
-                "mag": 33,
+                "numProjects": 33,
                 "country": "US"
             },
             "id": "Redmond::US"
@@ -741,6 +723,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 2,
                 "city": "Somerville",
                 "topics": [
                     4,
@@ -751,7 +734,7 @@
                     16,
                     18
                 ],
-                "mag": 2,
+                "numProjects": 2,
                 "country": "US"
             },
             "id": "Somerville::US"
@@ -766,6 +749,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "College Park",
                 "topics": [
                     13,
@@ -773,7 +757,7 @@
                     24,
                     25
                 ],
-                "mag": 2,
+                "numProjects": 2,
                 "country": "US"
             },
             "id": "College Park::US"
@@ -788,6 +772,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 6,
                 "city": "Provo",
                 "topics": [
                     1,
@@ -815,7 +800,7 @@
                     24,
                     25
                 ],
-                "mag": 40,
+                "numProjects": 40,
                 "country": "US"
             },
             "id": "Provo::US"
@@ -830,6 +815,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 3,
                 "city": "Osaka",
                 "topics": [
                     2,
@@ -838,7 +824,7 @@
                     13,
                     22
                 ],
-                "mag": 4,
+                "numProjects": 4,
                 "country": "JP"
             },
             "id": "Osaka::JP"
@@ -853,6 +839,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 2,
                 "city": "Brea",
                 "topics": [
                     1,
@@ -881,7 +868,7 @@
                     24,
                     25
                 ],
-                "mag": 5,
+                "numProjects": 5,
                 "country": "US"
             },
             "id": "Brea::US"
@@ -896,11 +883,12 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "None",
                 "topics": [
                     22
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "None::US"
@@ -915,6 +903,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Southfield",
                 "topics": [
                     1,
@@ -942,7 +931,7 @@
                     24,
                     25
                 ],
-                "mag": 27,
+                "numProjects": 27,
                 "country": "US"
             },
             "id": "Southfield::US"
@@ -957,6 +946,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 6,
                 "city": "Scottsdale",
                 "topics": [
                     1,
@@ -985,7 +975,7 @@
                     24,
                     25
                 ],
-                "mag": 6,
+                "numProjects": 6,
                 "country": "US"
             },
             "id": "Scottsdale::US"
@@ -1000,6 +990,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Pocatello",
                 "topics": [
                     4,
@@ -1007,7 +998,7 @@
                     13,
                     24
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Pocatello::US"
@@ -1022,6 +1013,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "None",
                 "topics": [
                     1,
@@ -1034,7 +1026,7 @@
                     18,
                     22
                 ],
-                "mag": 2,
+                "numProjects": 2,
                 "country": "SG"
             },
             "id": "None::SG"
@@ -1049,6 +1041,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "None",
                 "topics": [
                     1,
@@ -1056,7 +1049,7 @@
                     14,
                     22
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "SE"
             },
             "id": "None::SE"
@@ -1071,6 +1064,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 3,
                 "city": "Mountain View",
                 "topics": [
                     3,
@@ -1083,7 +1077,7 @@
                     24,
                     25
                 ],
-                "mag": 4,
+                "numProjects": 4,
                 "country": "US"
             },
             "id": "Mountain View::US"
@@ -1098,6 +1092,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 16,
                 "city": "Cambridge",
                 "topics": [
                     1,
@@ -1126,7 +1121,7 @@
                     24,
                     25
                 ],
-                "mag": 50,
+                "numProjects": 375,
                 "country": "US"
             },
             "id": "Cambridge::US"
@@ -1141,6 +1136,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 1,
                 "city": "Berkeley",
                 "topics": [
                     3,
@@ -1148,7 +1144,7 @@
                     22,
                     25
                 ],
-                "mag": 1,
+                "numProjects": 1,
                 "country": "US"
             },
             "id": "Berkeley::US"
@@ -1163,6 +1159,7 @@
             },
             "type": "Feature",
             "properties": {
+                "numSites": 3,
                 "city": "Culver City",
                 "topics": [
                     1,
@@ -1191,10 +1188,48 @@
                     24,
                     25
                 ],
-                "mag": 127,
+                "numProjects": 127,
                 "country": "US"
             },
             "id": "Culver City::US"
         }
-    ]
+    ],
+    "None::FI": {},
+    "None::DE": {},
+    "White Plains::US": {},
+    "San Antonio::US": {},
+    "Copenhagen::Denmark": {},
+    "None::FR": {},
+    "Atlanta::US": {},
+    "None::DK": {},
+    "Baku::RU": {},
+    "Herndon::US": {},
+    "Stanford::US": {},
+    "Absecon::US": {},
+    "Garden City::US": {},
+    "Fairfax::US": {},
+    "Ashburn::US": {},
+    "Tokyo::JP": {},
+    "type": "FeatureCollection",
+    "Boston::US": {},
+    "Crownsville::US": {},
+    "Fremont::US": {},
+    "Burnaby::CA": {},
+    "Phoenix::US": {},
+    "Redmond::US": {},
+    "Somerville::US": {},
+    "College Park::US": {},
+    "Provo::US": {},
+    "Osaka::JP": {},
+    "Brea::US": {},
+    "None::US": {},
+    "Southfield::US": {},
+    "Scottsdale::US": {},
+    "Pocatello::US": {},
+    "None::SG": {},
+    "None::SE": {},
+    "Mountain View::US": {},
+    "Cambridge::US": {},
+    "Berkeley::US": {},
+    "Culver City::US": {}
 }

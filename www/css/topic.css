@@ -1,0 +1,48 @@
+#topics-wrapper {
+  margin:0;
+  float:left;
+  width:500px;
+  height:7800px;
+  background:#f9f6f5;
+  font-family: lato, serif;
+}
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.node text {
+  font-size: 11px;
+}
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+#description {
+  margin-left: 0px;
+  padding-top: 25px;
+  padding-left: 35px;
+  float: left;
+  width: 500px;
+  font-family: lato, serif; 
+}
+#titling {
+  margin-top: 15px;
+  float: top;
+  font-size: 1.67em; 
+}
+#main-text {
+  font-size: 1em;
+  float: bottom; 
+}
+#main-text h2 {
+  font-size: 1.33em;
+  margin-top: 18px;
+  margin-bottom: 15px; 
+}
+#data-text {
+  font-size: 0.9em;
+  margin-bottom: 25px; 
+}
